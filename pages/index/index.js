@@ -3,6 +3,12 @@
 const app = getApp()
 
 Page({
+  onShareAppMessage() {
+    return {
+      title: 'cover-view',
+      path: 'page/component/pages/cover-view/cover-view'
+    }
+  },
   data: {
     motto: 'Hello World',
     userInfo: {},
@@ -13,7 +19,9 @@ Page({
         //轮播图配置
         autoplay: true,
         interval: 3000,
-        duration: 1200
+        duration: 1200,
+        latitude: 23.099994,
+        longitude: 113.324520
   },
   // 事件处理函数
   bindViewTap() {
